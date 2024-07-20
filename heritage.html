@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN TOURISM</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="icon" href="images/logo.jpg" type="image/jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+  
+    <header class="header">
+      <img src="images/logo.jpg" />
+      <b> Ghoomo <span>!</span>ndia </b>
+    </header>
+
+    <nav class="nav">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="destination.html">Destinations</a>
+       
+        <a class="dropbtn">Experiences</a>
+        <div class="dropdown-content">
+          <a href="heritage.html" class="active">Heritage</a>
+          <a href="spritual.html">Spiritual</a>
+          <a href="wildlife.html">Wildlife</a>
+          <a href="nature.html">Nature</a>
+        </div>
+        <a href="bookingForm.html">Book Trip</a>
+        <div class="search-container">
+          <form id="searchForm" target="_blank" >
+            <input list="search" placeholder="Search..." id="list" name="search">
+                                        <datalist id="search">
+                                                <option value="Taj Mahal">Taj Mahal</option>
+                                                <option value="Statue Of Unity">Statue Of Unity</option>
+                                                <option value="Golden Temple">Golden Temple</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="India Gate">India Gate</option>
+                                                <option value="Vrindavan">Vrindavan</option>
+                                                <option value="Ahmedabad">Ahmedabad</option>
+                                                <option value="Jodhpur">Jodhpur</option>
+                                                <option value="Udaipur">Udaipur</option>
+                                                <option value="Ramanathaswamy Temple">Ramanathaswamy Temple</option>
+                                                <option value="Kashi">Kashi</option>
+                                                <option value="Kedarnath">Kedarnath</option>
+                                                <option value="Ranthambore National Park">Ranthambore National Park</option>
+                                                <option value="Sariska Wildlife Sanctuary">Sariska Wildlife Sanctuary</option>
+                                                <option value="Panna national Park">Panna national Park</option>
+                                                <option value="MANALI">MANALI</option>
+                                                <option value="OOTY">OOTY</option>
+                                                <option value="GANGTOK">GANGTOK</option>
+                                        </datalist>
+            <button type="submit">
+              <i class="fa fa-search" id="serch_icon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="exprins-main">
+      <img
+        src="images/indeximg.jpg"
+        alt="heritage"
+        title="heritage experience"
+      />
+      <div class="centered">
+        <h1>Heritage</h1>
+      </div>
+
+      <div class="popular-block">
+        <h1>Popular Heritage Destinations In India</h1>
+        <p>
+          A land resounding with the riches and glories of opulent dynasties,
+          powerful rulers, flourishing civilisations and profound history, India
+          has a splendid heritage that is reflected in its architecture,
+          monuments, arts, crafts, cultures and even religions. While formidable
+          forts, ancient temples and grand palaces testify of the grandeur of
+          times gone by, the various museums and galleries scattered across the
+          country act as inventories of India's seamless past. Such is the
+          magnificence of the structures in the country that UNESCO has
+          identified several of them as heritage sites.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h3>Ahmedabad</h3>
+          <img src="images/ahmedabad.jpg" alt="ahmedabad city" />
+          <div class="description">
+            Declared as India's first UNESCO World Heritage City, Ahmedabad or
+            Amdavad is steeped in history and tradition. Offering a seamless
+             architecture of centuries-old mosques. 
+          </div>
+        </div>
+        <div class="column">
+          <h3>Jodhpur</h3>
+          <img src="images/jodhpur.jpg" alt="jodhpur city" />
+          <div class="description">
+            With a sea of sapphire-blue painted houses and guarded by the
+            gorgeous Mehrangarh Fort, the city of Jodhpur, the second-largest in
+            Rajasthan, is an architectural marvel.
+          </div>
+        </div>
+        <div class="column">
+          <h3>Udaipur</h3>
+          <img src="images/udaipur.jpg" alt="udaipur city" />
+          <div class="description">
+            Popularly known as the City of Lakes, serene Udaipur is the crowning
+            jewel of royal Rajasthan. With shimmering lakes visible from almost
+            every rooftop.
+          </div>
+        </div>
+      </div>
+    </main>
+    
+
+<footer class="footer">
+  <p> &copy; Copyrights 2023-2024. All right reserved</p>
+  <div class="social-img">
+
+          <p><a href="https://www.facebook.com/yoloindiatours" target="_blank"><img class="img1" src="images/fb.png"  alt="Facebook Logo" /></a></p>
+<p><a href="https://www.instagram.com/yoloindiatours" target="_blank"><img class="img2" src="images/insta.png" alt="Instagram Logo" /></a></p>
+<p><a href="https://twitter.com/yoloindiatours" target="_blank"><img class="img3" src="images/twiter.png" alt="Twitter Logo" /></a></p>
+  </div>
+</footer>
+<script>
+
+
+
+  document.getElementById('searchForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      
+      var selectedValue = document.getElementById('list').value;
+  
+      var fileMap = {
+          'Taj Mahal': 'formTAJ.html',
+          'Ahmedabad': 'formAH.html',
+          'GANGTOK': 'formGANG.html',
+          'Goa': 'formGOA.html',
+          'Golden Temple': 'formGT.html',
+          'Jodhpur': 'formJODH.html',
+          'Kashi': 'formKASHI.html',
+          'Kedarnath': 'formKED.html',
+          'MANALI': 'formMAN.html',
+          'OOTY': 'formOOTY.html',
+          'Panna national Park': 'formPNP.html',
+          'Ranthambore National Park': 'formRNP.html',
+          'Ramanathaswamy Temple': 'formRT.html',
+          'Statue Of Unity': 'formSOU.html',
+          'Sariska Wildlife Sanctuary': 'formSWS.html',
+          'Udaipur': 'formUDAI.html',
+          'Vrindavan': 'formVRI.html',
+  
+         
+          
+        
+      };
+  
+    
+      if (fileMap[selectedValue]) {
+        
+          window.location.href = fileMap[selectedValue];
+      } else {
+         
+          alert('No matching file found!');
+      }
+  });
+  
+          </script>
+
+  </body>
+</html>

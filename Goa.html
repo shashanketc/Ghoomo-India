@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDIAN TOURISM</title>
+  <link rel="stylesheet" href="project.css" />
+  <link rel="icon" href="images/title-icon.jpg" type="image/jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="images/logo.jpg" />
+
+    <b> Ghoomo <span>!</span>ndia </b>
+  </header>
+  <nav class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <div class="menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="destination.html">Destinations</a>
+      
+      <a href="javascript:void(0)" class="dropbtn">Experiences</a>
+      <div class="dropdown-content">
+        <a href="heritage.html">Heritage</a>
+        <a href="spritual.html">Spiritual</a>
+        <a href="wildlife.html">Wildlife</a>
+        <a href="nature.html">Nature</a>
+      </div>
+      <a href="bookingForm.html">Book Trip</a>
+      <div class="search-container">
+        <form id="searchForm" target="_blank" >
+          <input list="search" placeholder="Search..." id="list" name="search" />
+          <datalist id="search">
+            <option value="Taj Mahal">Taj Mahal</option>
+            <option value="Statue Of Unity">Statue Of Unity</option>
+            <option value="Golden Temple">Golden Temple</option>
+            <option value="Goa">Goa</option>
+            <option value="India Gate">India Gate</option>
+            <option value="Vrindavan">Vrindavan</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Jodhpur">Jodhpur</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Ramanathaswamy Temple">
+              Ramanathaswamy Temple
+            </option>
+            <option value="Kashi">Kashi</option>
+            <option value="Kedarnath">Kedarnath</option>
+            <option value="Ranthambore National Park">
+              Ranthambore National Park
+            </option>
+            <option value="Sariska Wildlife Sanctuary">
+              Sariska Wildlife Sanctuary
+            </option>
+            <option value="Panna national Park">Panna national Park</option>
+            <option value="MANALI">MANALI</option>
+            <option value="OOTY">OOTY</option>
+            <option value="GANGTOK">GANGTOK</option>
+          </datalist>
+          <button type="submit">
+            <i class="fa fa-search" id="serch_icon"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="exprins-main" style="border-top: 2px solid darkblue">
+    <div class="description-container">
+      <div class="row">
+        <div class="column">
+          <img src="images/goa2.jpg" alt="Goa" title="Goa" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <span style="
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                  sans-serif;
+              ">Goa</span>
+          <p>
+            Goa is visited by large numbers of international and domestic
+            tourists each year because of its white-sand beaches, active
+            nightlife, places of worship, and World Heritage-listed
+            architecture. It also has rich flora and fauna because it lies
+            very close to the North Western Ghats rainforests, one of the rare
+            biodiversity hotspots of the world. Panaji is the state's capital,
+            while Vasco da Gama is its largest city. The historic city of
+            Margão in Goa still exhibits the cultural influence of the
+            Portuguese, who first voyaged to the subcontinent in the early
+            16th century as merchants, and conquered it soon thereafter,
+            whereupon Goa became an overseas territory of the Portuguese
+            Empire, part of what was then known as Portuguese India, and
+            remained as such for about 456 years until it was annexed by India
+            in 1961. Goa's official language, which is spoken by a
+            majority of its inhabitants, is Konkani.
+          </p>
+
+          <p>
+            In 1312, Goa came under the governance of the Delhi Sultanate. The kingdom's grip on the region was weak,
+            and by 1370 it was forced to surrender it to Harihara I of the Vijayanagara Empire. The Vijayanagara
+            monarchs held on to the territory until 1469 when it was appropriated by the Bahmani sultans of Gulbarga.
+            After that dynasty crumbled, the area fell into the hands of the Adil Shahis of Bijapur, who established as
+            their auxiliary capital the city known under the Portuguese as Velha Goa (or Old Goa). Goa's seven major
+            rivers are the Mandovi, Zuari, Terekhol, Chapora, Galgibag, Cumbarjua canal, Talpona, and the Sal. The
+            Zuari and the Mandovi are the most important rivers, interspaced by the Cumbarjua canal, forming a major
+            estuarine complex. These rivers are fed by the Southwest monsoon rain and their basin covers 69% of the
+            state's geographical area. These rivers are some of the busiest in India. Goa has more than 40
+            estuarine, eight marine, and about 90 riverine islands. The total navigable length of Goa's rivers is 253 km
+            (157 mi). Goa has more than 300 ancient water tanks built during the rule of the Kadamba dynasty and over
+            100 medicinal springs.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <button type="button" id="more-details" value="Read More" onclick="toggle_visibility('details');">
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p id="details">
+            Shaped like the new moon, Goa’s beaches are known the world over. Fringed by swaying palm and coconut trees
+            with cool and comfortable shacks offering a variety of refreshments, Goa’s 103 km coastline is blessed with
+            the most enchanting beaches lapped by the Arabian Sea. And almost all of them are swimmer friendly with the
+            assured presence of lifeguards on all the popular beaches. 105 kms of Konkan coast stretches across the
+            state of Goa providing a wide range of choice in beaches to suit everybody’s needs. There are unspoilt
+            pristine stretches of sand for the solitude seeker and there are those ones jammed with people in every
+            square feet of sand. <br><br>
+
+
+
+            There are beaches far from human habitation with very basic or sometimes no facility for accommodation. Then
+            there are some with ultra modern comforts like internet cafes, massage centers, gyms, swimming pools, night
+            clubs, etc. With such an enormous choice, one might feel confused about which one to take.
+
+
+
+            But on the contrary, it’s quite easy to plan an itinerary for getting suntan allover the body. Taking the
+            capital Panaji and the next major city Margao as base points, all the beaches can be visited in a stretch.
+            North from Panaji lies the most famous beach of Calangute.From here onwards to the northern tip of the
+            state, swaying palms and shimmering sands stretch giving an enchanting sight.The further north, the emptier
+            the beaches become.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+ 
+  <script type="text/javascript">
+
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      var a = document.getElementById("more-details");
+      if (e.style.display == "block") {
+        e.style.display = "none";
+        a.style.display = "block";
+      } else {
+        e.style.display = "block";
+        a.style.display = "none";
+      }
+    }
+    
+  </script>
+   <footer class="footer">
+    <p> &copy; Copyrights 2023-2024. All right reserved</p>
+    <div class="social-img">
+
+            <p><a href="https://www.facebook.com/yoloindiatours" target="_blank"><img class="img1" src="images/fb.png"  alt="Facebook Logo" /></a></p>
+<p><a href="https://www.instagram.com/yoloindiatours" target="_blank"><img class="img2" src="images/insta.png" alt="Instagram Logo" /></a></p>
+<p><a href="https://twitter.com/yoloindiatours" target="_blank"><img class="img3" src="images/twiter.png" alt="Twitter Logo" /></a></p>
+    </div>
+</footer>
+
+<script>
+
+
+
+  document.getElementById('searchForm').addEventListener('submit', function(e) {
+      e.preventDefault(); 
+  
+      
+      var selectedValue = document.getElementById('list').value;
+  
+      
+      var fileMap = {
+          'Taj Mahal': 'formTAJ.html',
+          'Ahmedabad': 'formAH.html',
+          'GANGTOK': 'formGANG.html',
+          'Goa': 'formGOA.html',
+          'Golden Temple': 'formGT.html',
+          'Jodhpur': 'formJODH.html',
+          'Kashi': 'formKASHI.html',
+          'Kedarnath': 'formKED.html',
+          'MANALI': 'formMAN.html',
+          'OOTY': 'formOOTY.html',
+          'Panna national Park': 'formPNP.html',
+          'Ranthambore National Park': 'formRNP.html',
+          'Ramanathaswamy Temple': 'formRT.html',
+          'Statue Of Unity': 'formSOU.html',
+          'Sariska Wildlife Sanctuary': 'formSWS.html',
+          'Udaipur': 'formUDAI.html',
+          'Vrindavan': 'formVRI.html',
+  
+         
+          
+          
+  
+  
+          
+      };
+  
+     
+      if (fileMap[selectedValue]) {
+         
+          window.location.href = fileMap[selectedValue];
+      } else {
+          
+          alert('No matching file found!');
+      }
+  });
+  
+          </script>
+
+</body>
+
+</html>

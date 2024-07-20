@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDIAN TOURISM</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="icon" href="images/title-icon.jpg" type="image/jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+  <header class="header">
+
+    <img src="images/logo.jpg">
+
+    <b> Ghoomo <span>!</span>ndia </b>
+  </header>
+  <nav class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
+    <div class="menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="destination.html">Destinations</a>
+      
+      <a href="javascript:void(0)" class="dropbtn">Experiences</a>
+      <div class="dropdown-content">
+        <a href="heritage.html">Heritage</a>
+        <a href="spritual.html">Spiritual</a>
+        <a href="wildlife.html">Wildlife</a>
+        <a href="nature.html">Nature</a>
+      </div>
+      <a href="bookingForm.html">Book Trip</a>
+      <div class="search-container">
+        <form id="searchForm" target="_blank" >
+          <input list="search" placeholder="Search..." id="list" name="search">
+          <datalist id="search">
+            <option value="Taj Mahal">Taj Mahal</option>
+            <option value="Statue Of Unity">Statue Of Unity</option>
+            <option value="Golden Temple">Golden Temple</option>
+            <option value="Goa">Goa</option>
+            <option value="India Gate">India Gate</option>
+            <option value="Vrindavan">Vrindavan</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Jodhpur">Jodhpur</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Ramanathaswamy Temple">Ramanathaswamy Temple</option>
+            <option value="Kashi">Kashi</option>
+            <option value="Kedarnath">Kedarnath</option>
+            <option value="Ranthambore National Park">Ranthambore National Park</option>
+            <option value="Sariska Wildlife Sanctuary">Sariska Wildlife Sanctuary</option>
+            <option value="Panna national Park">Panna national Park</option>
+            <option value="MANALI">MANALI</option>
+            <option value="OOTY">OOTY</option>
+            <option value="GANGTOK">GANGTOK</option>
+          </datalist>
+          <button type="submit"><i class="fa fa-search" id="serch_icon"></i></button>
+        </form>
+      </div>
+    </div>
+
+  </nav>
+
+  <main class="exprins-main" style="border-top:2px solid darkblue">
+
+    <div class="description-container">
+      <div class="row">
+        <div class="column">
+          <img src="images/vrindavan2.jpg" alt="Vrindavan" Title="Vrindavan">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Vrindavan</span>
+          <p>Vrindavan takes its name literally from “forest of Tulsi” or the Holy Basil (Ocimum tenuiflorum). Two
+            groves of these Tulsi herbs can still be seen in Sewa Kunj and Nidhivan both of which are situated near the
+            city and were the favorite sites for Radha and Krishna as well as the Gopis for conducting their ‘dance of
+            devout passion’ or ‘Raas Lila’.</p>
+
+
+          <p>Vrindavan is a city of temples and ashrams where devotees of Lord Krishna have built, extended or
+            contributed towards increasing the creature comforts for the devotees thronging to the divine pilgrimage
+            site. The city virtually reverberates with the resounding chants of ‘Radhe Krishna’ during the morning and
+            evening hours when six ‘pujas’ or ‘aartis’ are performed and the ‘prasad’ or ‘bhog’ is also distributed.
+
+            ChantsThe divine love of Radha and Krishna, the mischievous antics of the naughty, youthful Krishna and the
+            cow herd maidens or Gopis, the gentle care of the Gokul chieftain, Nand and his wife Yashodha’s great love
+            for her foster child Krishna as was his love for his elder brother, Balram – all are the substance of myths,
+            rituals, traditions, events and festivals that make Vrindavan such a sought after tourist attraction.</p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <button type="button" id="more-details" value="Read More" onclick="toggle_visibility('details');">Read
+            More</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p id="details">
+            Vrindavan is the prominent centre for the dance form, ‘Raas Lila’ or the dance of divine devotion along with
+            Rasiya songs forming the backdrop to the dances where the girls carry lamps on their heads and swing through
+            various formations to the tune of myriad musical instruments.
+            <br><br>
+
+            The great music festival, ‘Swami Haridas Sammelan’ is organized in the memory of Swami Haridas. He was the
+            Guru of the great singing maestro, Tansen. Tansen was one of the nine talented gems in the court of King
+            Akbar. Thus, Vrindavan has unique distinction of being a seat of learning and cultural expansion of the mind
+            and spirit both.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  
+  <script type="text/javascript">
+
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      var a = document.getElementById("more-details");
+      if (e.style.display == 'block') {
+        e.style.display = "none";
+        a.style.display = 'block';
+      }
+
+      else {
+        e.style.display = 'block';
+        a.style.display = 'none';
+      }
+
+    }
+
+  </script>
+   <footer class="footer">
+    <p> &copy; Copyrights 2023-2024. All right reserved</p>
+    <div class="social-img">
+
+            <p><a href="https://www.facebook.com/yoloindiatours" target="_blank"><img class="img1" src="images/fb.png"  alt="Facebook Logo" /></a></p>
+<p><a href="https://www.instagram.com/yoloindiatours" target="_blank"><img class="img2" src="images/insta.png" alt="Instagram Logo" /></a></p>
+<p><a href="https://twitter.com/yoloindiatours" target="_blank"><img class="img3" src="images/twiter.png" alt="Twitter Logo" /></a></p>
+    </div>
+</footer>
+<script>
+
+
+
+  document.getElementById('searchForm').addEventListener('submit', function(e) {
+      e.preventDefault(); 
+      
+      var selectedValue = document.getElementById('list').value;
+  
+      
+      var fileMap = {
+          'Taj Mahal': 'formTAJ.html',
+          'Ahmedabad': 'formAH.html',
+          'GANGTOK': 'formGANG.html',
+          'Goa': 'formGOA.html',
+          'Golden Temple': 'formGT.html',
+          'Jodhpur': 'formJODH.html',
+          'Kashi': 'formKASHI.html',
+          'Kedarnath': 'formKED.html',
+          'MANALI': 'formMAN.html',
+          'OOTY': 'formOOTY.html',
+          'Panna national Park': 'formPNP.html',
+          'Ranthambore National Park': 'formRNP.html',
+          'Ramanathaswamy Temple': 'formRT.html',
+          'Statue Of Unity': 'formSOU.html',
+          'Sariska Wildlife Sanctuary': 'formSWS.html',
+          'Udaipur': 'formUDAI.html',
+          'Vrindavan': 'formVRI.html',
+  
+         
+          
+          
+  
+  
+          
+      };
+  
+      
+      if (fileMap[selectedValue]) {
+          
+          window.location.href = fileMap[selectedValue];
+      } else {
+         
+          alert('No matching file found!');
+      }
+  });
+  
+          </script>
+
+</body>
+
+</html>

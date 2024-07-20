@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>INDIAN TOURISM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project.css">
+  <link rel="icon" href="images/title-icon.jpg" type="image/jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <img src="images/logo.jpg">
+
+    <b> Ghoomo <span>!</span>ndia </b>
+  </header>
+  <nav class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle">
+    <div class="menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="destination.html">Destinations</a>
+     
+      <a href="javascript:void(0)" class="dropbtn">Experiences</a>
+      <div class="dropdown-content">
+        <a href="heritage.html">Heritage</a>
+        <a href="spritual.html">Spiritual</a>
+        <a href="wildlife.html">Wildlife</a>
+        <a href="nature.html">Nature</a>
+      </div>
+      <a href="bookingForm.html">Book Trip</a>
+      <div class="search-container">
+        <form id="searchForm" target="_blank" >
+          <input list="search" placeholder="Search..." id="list" name="search">
+          <datalist id="search">
+            <option value="Taj Mahal">Taj Mahal</option>
+            <option value="Statue Of Unity">Statue Of Unity</option>
+            <option value="Golden Temple">Golden Temple</option>
+            <option value="Goa">Goa</option>
+            <option value="India Gate">India Gate</option>
+            <option value="Vrindavan">Vrindavan</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Jodhpur">Jodhpur</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Ramanathaswamy Temple">Ramanathaswamy Temple</option>
+            <option value="Kashi">Kashi</option>
+            <option value="Kedarnath">Kedarnath</option>
+            <option value="Ranthambore National Park">Ranthambore National Park</option>
+            <option value="Sariska Wildlife Sanctuary">Sariska Wildlife Sanctuary</option>
+            <option value="Panna national Park">Panna national Park</option>
+            <option value="MANALI">MANALI</option>
+            <option value="OOTY">OOTY</option>
+            <option value="GANGTOK">GANGTOK</option>
+          </datalist>
+          <button type="submit"><i class="fa fa-search" id="serch_icon"></i></button>
+        </form>
+      </div>
+    </div>
+
+  </nav>
+
+  <main class="exprins-main" style="border-top:2px solid darkblue">
+
+    <div class="description-container">
+      <div class="row">
+        <div class="column">
+          <img src="images/goldentemple.jpg" alt="Golden Temple" Title="Golden Temple">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Golden Temple</span>
+          <p>The Golden Temple (also known as the Harimandir Sahib , or the Darbar Sahib, or Suvaran
+            Mandir) is a gurdwara located in the city of Amritsar, Punjab, India. It is the pre-eminent
+            spiritual site of Sikhism. It is one of the holiest sites in Sikhism, alongside the Gurdwara Darbar Sahib
+            Kartarpur in Kartarpur, and Gurdwara Janam Asthan in Nankana Sahib.
+
+            The man-made pool on the site of the temple was completed by the fourth Sikh Guru, Guru Ram Das, in
+            1577. In 1604, Guru Arjan, the fifth Sikh Guru, placed a copy of the Adi Granth in the Golden Temple
+            and was a prominent figure in its development. The gurdwara was repeatedly rebuilt by the Sikhs after
+            it became a target of persecution and was destroyed several times by the Mughal and invading Afghan
+            armies. Maharaja Ranjit Singh, after founding the Sikh Empire, rebuilt it in marble and copper in
+            1809, and overlaid the sanctum with gold leaf in 1830. This has led to the name the Golden
+            Temple.</p>
+
+          <p>The Golden Temple is spiritually the most significant shrine in Sikhism. It became a centre of the Singh
+            Sabha Movement between 1883 and the 1920s, and the Punjabi Suba movement between 1947 and 1966. In the early
+            1980s, the gurdwara became a centre of conflict between the Indian government and a radical movement led by
+            Jarnail Singh Bhindranwale.[13] In 1984, Prime Minister Indira Gandhi sent in the Indian Army as part of
+            Operation Blue Star, leading to deaths of more than 1,000 soldiers, militants and civilians, as well as
+            causing much damage to the gurdwara and the destruction of Akal Takht. The gurdwara complex was rebuilt
+            again after the 1984 damage.</p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <button type="button" id="more-details" value="Read More" onclick="toggle_visibility('details');">Read
+            More</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p id="details">The Golden Temple is an open house of worship for all people, from all walks of life and
+            faiths. It has a square plan with four entrances, and a circumambulation path around the pool. The four
+            entrances to the gurudwara symbolises the Sikh belief in equality and the Sikh view that all people are
+            welcome into their holy place. The complex is a collection of buildings around the sanctum and the
+            pool. One of these is Akal Takht, the chief centre of religious authority of Sikhism. Additional
+            buildings include a clock tower, the offices of the Gurdwara Committee, a Museum and a langar – a free Sikh
+            community-run kitchen that offers a vegetarian meal to all visitors without discrimination. Over 150,000
+            people visit the holy shrine everyday for worship. The Gurdwara complex has been nominated as a UNESCO
+            World Heritage Site, and its application is pending on the tentative list of UNESCO.</p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  
+  <script type="text/javascript">
+
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      var a = document.getElementById("more-details");
+      if (e.style.display == 'block') {
+        e.style.display = "none";
+        a.style.display = 'block';
+      }
+
+      else {
+        e.style.display = 'block';
+        a.style.display = 'none';
+      }
+
+    }
+
+  </script>
+   <footer class="footer">
+    <p> &copy; Copyrights 2023-2024. All right reserved</p>
+    <div class="social-img">
+
+            <p><a href="https://www.facebook.com/yoloindiatours" target="_blank"><img class="img1" src="images/fb.png"  alt="Facebook Logo" /></a></p>
+<p><a href="https://www.instagram.com/yoloindiatours" target="_blank"><img class="img2" src="images/insta.png" alt="Instagram Logo" /></a></p>
+<p><a href="https://twitter.com/yoloindiatours" target="_blank"><img class="img3" src="images/twiter.png" alt="Twitter Logo" /></a></p>
+    </div>
+</footer>
+
+<script>
+
+
+
+  document.getElementById('searchForm').addEventListener('submit', function(e) {
+      e.preventDefault(); 
+  
+      
+      var selectedValue = document.getElementById('list').value;
+  
+      
+      var fileMap = {
+          'Taj Mahal': 'formTAJ.html',
+          'Ahmedabad': 'formAH.html',
+          'GANGTOK': 'formGANG.html',
+          'Goa': 'formGOA.html',
+          'Golden Temple': 'formGT.html',
+          'Jodhpur': 'formJODH.html',
+          'Kashi': 'formKASHI.html',
+          'Kedarnath': 'formKED.html',
+          'MANALI': 'formMAN.html',
+          'OOTY': 'formOOTY.html',
+          'Panna national Park': 'formPNP.html',
+          'Ranthambore National Park': 'formRNP.html',
+          'Ramanathaswamy Temple': 'formRT.html',
+          'Statue Of Unity': 'formSOU.html',
+          'Sariska Wildlife Sanctuary': 'formSWS.html',
+          'Udaipur': 'formUDAI.html',
+          'Vrindavan': 'formVRI.html',
+  
+         
+          
+          
+  
+  
+          
+      };
+  
+      
+      if (fileMap[selectedValue]) {
+          
+          window.location.href = fileMap[selectedValue];
+      } else {
+         
+          alert('No matching file found!');
+      }
+  });
+  
+          </script>
+
+</body>
+
+</html>

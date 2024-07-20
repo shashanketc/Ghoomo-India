@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .profile-img {
+            max-width: 70%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .content-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content-links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome, <span id="userName"></span> </h2>
+
+        <img src="images\travel.gif" alt="travel" class="profile-img">
+        <p> <b>Your form submitted successfully </b> </p>
+        <p class="content-text">
+            We are glad you visited our website. You can see more information and photos of beautiful places through the
+            link below.
+        </p>
+        <div class="content-links">
+            <a href="Goa.html">Goa</a>
+            <a href="IndiaGate.html">India Gate</a>
+            <a href="taj.html">Taj Mahal</a>
+            <a href="wildlife.html">Wildlife</a>
+            <a href="nature.html">Nature</a>
+            <a href="spritual.html">Spiritual</a>
+            <a href="StatueOfUnity.html">Statue Of Unity</a>
+            <a href="Vrindavan.html">Vrindavan</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="GoldenTemple.html">Golden Temple</a>
+            
+            
+         
+        </div>
+    </div>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const name = urlParams.get('name');
+        if (name) {
+            document.getElementById('userName').innerText = decodeURIComponent(name);
+        }
+    </script>
+</body>
+
+</html>
